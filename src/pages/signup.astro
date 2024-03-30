@@ -1,0 +1,116 @@
+---
+import Formbox from "../components/Formbox.astro";
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  description="AllTargeting, your one-stop destination for exceptional media and advertising services. With over 8 years of industry expertise and exclusive contracts with mega and intermediate influencers in the Middle East."
+  title="Sign Up | all targeting"
+>
+
+
+
+  <Formbox>
+    <form>
+      <div class="mb-[22px]">
+        <input
+          type="text"
+          placeholder="Name"
+          class="border-stroke dark:border-dark-3 bg-transparent w-full rounded-md border py-3 px-5 text-base text-body-color dark:text-dark-6 placeholder:text-dark-6 outline-none transition focus:border-teal-600 dark:focus:border-teal-600 focus-visible:shadow-none"
+        />
+      </div>
+      <div class="mb-[22px]">
+        <input
+          type="email"
+          placeholder="Email"
+          class="border-stroke dark:border-dark-3 bg-transparent w-full rounded-md border py-3 px-5 text-base text-body-color dark:text-dark-6 placeholder:text-dark-6 outline-none transition focus:border-teal-600 dark:focus:border-teal-600 focus-visible:shadow-none"
+        />
+      </div>
+      <div class="mb-[22px]">
+        <input
+          type="password"
+          placeholder="Password"
+          autocomplete="on"
+          class="border-stroke dark:border-dark-3 bg-transparent w-full rounded-md border py-3 px-5 text-base text-body-color dark:text-dark-6 placeholder:text-dark-6 outline-none transition focus:border-teal-600 dark:focus:border-teal-600 focus-visible:shadow-none"
+        />
+      </div>
+      <div class="mb-9">
+        <input
+          type="submit"
+          value="Sign Up"
+          class="border-teal-600 w-full cursor-pointer rounded-md border bg-teal-600 py-3 px-5 text-base text-white transition duration-300 ease-in-out hover:bg-blue-dark"
+        />
+      </div>
+    </form>
+    <span class="relative z-1 block text-center mb-7">
+      <span class="block absolute -z-1 left-0 top-1/2 h-px w-full bg-stroke dark:bg-dark-3"></span>
+      <span class="inline-block px-3 bg-white dark:bg-dark-2 text-base text-body-secondary relative z-10">Connect With</span>
+    </span>
+    <ul class="-mx-2 mb-9 flex justify-between">
+      <li class="w-full px-2">
+        <a
+          href="javascript:void(0)"
+          class="flex h-11 items-center justify-center rounded-md bg-[#4064AC] transition hover:bg-opacity-90"
+        >
+          <svg
+            width="10"
+            height="20"
+            viewBox="0 0 10 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.29878 8H7.74898H7.19548V7.35484V5.35484V4.70968H7.74898H8.91133C9.21575 4.70968 9.46483 4.45161 9.46483 4.06452V0.645161C9.46483 0.290323 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.80645 3.18262 4.48387V7.29032V7.93548H2.62912H0.747223C0.359774 7.93548 0 8.29032 0 8.80645V11.129C0 11.5806 0.304424 12 0.747223 12H2.57377H3.12727V12.6452V19.129C3.12727 19.5806 3.43169 20 3.87449 20H6.47593C6.64198 20 6.78036 19.9032 6.89106 19.7742C7.00176 19.6452 7.08478 19.4194 7.08478 19.2258V12.6774V12.0323H7.66596H8.91133C9.2711 12.0323 9.54785 11.7742 9.6032 11.3871V11.3548V11.3226L9.99065 9.09677C10.0183 8.87097 9.99065 8.6129 9.8246 8.35484C9.76925 8.19355 9.52018 8.03226 9.29878 8Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </li>
+
+     
+      <li class="w-full px-2">
+        <a
+          href="javascript:void(0)"
+          class="flex h-11 items-center justify-center rounded-md bg-[#D64937] transition hover:bg-opacity-90"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.8477 8.17132H9.29628V10.643H15.4342C15.1065 14.0743 12.2461 15.5574 9.47506 15.5574C5.95916 15.5574 2.8306 12.8821 2.8306 9.01461C2.8306 5.29251 5.81018 2.47185 9.47506 2.47185C12.2759 2.47185 13.9742 4.24567 13.9742 4.24567L15.7024 2.47185C15.7024 2.47185 13.3783 0.000145544 9.35587 0.000145544C4.05223 -0.0289334 0 4.30383 0 8.98553C0 13.5218 3.81386 18 9.44526 18C14.4212 18 17.9967 14.7141 17.9967 9.79974C18.0264 8.78198 17.8477 8.17132 17.8477 8.17132Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <p class="mb-4 text-base text-body-secondary">
+      By creating an account you are agree with our
+      <a
+        href="javascript:void(0)"
+        class="text-teal-600 hover:underline"
+      >
+        Privacy
+      </a>
+      and
+      <a
+        href="javascript:void(0)"
+        class="text-teal-600 hover:underline"
+      >
+        Policy
+      </a>
+    </p>
+
+    <p class="text-base text-body-secondary">
+      Already have an account?
+      <a href="/signin" class="text-teal-600 hover:underline">
+        Sign In
+      </a>
+    </p>
+  </Formbox>
+</Layout>

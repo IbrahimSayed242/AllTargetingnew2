@@ -1,0 +1,48 @@
+---
+const clients = [
+  { ref: "#", image: "/assets/brands/axiatrade.svg", whiteImage: "/assets/brands/graygrids-white.svg", name: "axiatrade"},
+  { ref: "#", image: "/assets/brands/babilgame.svg", whiteImage: "/assets/brands/lineicons-white.svg", name: "babilgame"},
+  { ref: "#", image: "/assets/brands/evest.webp", whiteImage: "/assets/brands/uideck-white.svg", name: "evest"},
+  { ref: "#", image: "/assets/brands/exness.svg", whiteImage: "/assets/brands/ayroui-white.svg", name: "exness"},
+
+]
+---
+
+<!-- ====== Brands Section Start -->
+<section class="pb-20 dark:bg-dark py-10">
+
+  <div class="mx-auto mb-[60px] max-w-[685px] text-center">
+    <span class="block mb-2 text-lg font-semibold text-teal-600">
+      Our partners entrust us
+    </span>
+    <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+      TO THE SUCCESS OF THEIR CAMPAIGN
+    </h2>
+
+  </div>
+
+
+  <div class="container px-4">
+    <div class="-mx-2 flex  flex-wrap items-center justify-center  ">
+      {
+        clients.map(client => (
+          <a
+            href={client.ref}
+            target="_blank"
+            rel="nofollow noopner"
+            class="bg:slate-300 dark:bg-black  m-2 rounded-lg p-2"
+          >
+            <img
+              src={client.image}
+              alt={client.name}
+              class=" grayscale hover:grayscale-0 hover:scale-105  m-auto "
+              width="200" height="200"
+            />
+          
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+<!-- ====== Brands Section End -->

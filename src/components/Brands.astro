@@ -1,0 +1,258 @@
+---
+import Servcard from '../components/Servcard.astro';
+import Clients from '../components/Clients.astro';
+
+
+---
+<!-- ======  -->
+
+
+<style>
+  .radial-gradient {
+   
+    top:0px;
+    left:0px;
+  
+    
+    /*Fallback if gradeints don't work */
+    background: #c7afd1;
+    /*Linear gradient... */
+    background: 
+      radial-gradient(
+       at center, #00eccd, #065879
+      );
+  }
+  
+  </style>
+  
+  <script>
+  document.addEventListener('mousemove', function(event) {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+  
+    const mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+    const mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+  
+    const elements = document.querySelectorAll('.radial-gradient');
+  
+    for (const element of elements) {
+      element.style.background = `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%,#04df84,#065879)`;
+    }
+  });
+  </script>
+  <section
+    id="brands"
+    class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20  lg:pt-[120px] "
+  >
+  
+  
+  <section class="bg-center bg-no-repeat bg-[url('')] bg-gray-700 bg-blend-multiply  radial-gradient">
+    <div class="px-4 mx-auto max-w-screen-xl text-center pt-24 ">
+        <p class="mb-4 text-4xl font-extrabold tracking-tight  text-transparent bg-clip-text bg-gradient-to-r to-emerald-200 from-sky-200 md:text-5xl lg:text-6xl lg:leading-[6rem!important]  ">Get your brand to ring a bell</p>
+        <p class="mb-8 text-lg font-normal text-gray-50 lg:text-xl sm:px-16 lg:px-48"><span class="underline underline-offset-1 decoration-2 decoration-emerald-400 dark:decoration-emerald-600"> influencers </span> to achieve your campaign goals
+        </p>
+        <div class="flex flex-col  sm:flex-row sm:justify-center my-2">
+            <a href="#" class=" py-2 inline-flex justify-center items-center px-5 text-base font-medium text-center text-white rounded-lg bg-teal-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300 dark:focus:ring-emerald-900">
+                Get started
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+            <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-2  my-2 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                Learn more
+            </a>  
+        </div>
+        
+    </div>
+    <img class="m-auto rounded-lg w-4/6 " src="/assets/brands/alltargeting_creator.webp" alt="all targeting brands">
+  </section>
+  
+ <!-----------------------------------------
+ 
+ --- --> 
+  
+
+
+
+
+<!-----------------------------   -->     
+
+
+<div class="container mt-24 mx-auto md:px-6">
+
+  <section class="mb-32 text-center lg:text-left">
+    <style>
+      @media (min-width: 992px) {
+        .rotate-lg-6 {
+          transform: rotate(6deg);
+        }
+      }
+    </style>
+
+    <div class="pt-12 md:px-12">
+      <div class="container mx-auto xl:px-32">
+        <div class="flex grid items-center lg:grid-cols-2">
+          <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
+            <div
+              class="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[25px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14">
+              <h2 class="mb-6 text-3xl font-bold dark:text-white">Why advertise with all targeting?</h2>
+              <p class="mb-8 text-neutral-500 dark:text-white">
+                Creators use AllTargeting products to run their business everyday providing you direct access.
+              </p>
+
+              <div class="grid  grid-cols-1">
+                <div class="mb-6">
+                  <p class="flex items-center dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                      stroke="currentColor" class="mr-3 h-5 w-5 ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Reach Unique Audience We provide influencers that match your target audience.
+                  </p>
+                </div>
+
+                <div class="mb-6">
+                  <p class="flex items-center dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                      stroke="currentColor" class="mr-3 h-5 w-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Work with as many creators or as little as you like
+                  </p>
+                </div>
+
+                <div class="mb-6">
+                  <p class="flex items-center dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                      stroke="currentColor" class="mr-3 h-5 w-5 ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>Know who is watching your campaign
+                  </p>
+                </div>
+                
+
+       
+              </div>
+            </div>
+          </div>
+          <div class="md:mb-12 lg:mb-0">
+            <img src="/assets/brands/whychose.webp" class="rotate-lg-6 w-full rounded-lg shadow-lg" alt="chose alltargeting" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<!-----------------
+
+
+
+
+
+--- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+        
+  
+  
+      
+  
+  
+  
+ 
+<div class="flex flex-col justify-center ">
+  <img src="/assets/brands/all-tragetaa_ptefng.webp" class="w-full md:w-1/2 m-auto">
+  <div class="text-center">  
+    <p class="text-4xl ii">Be seen on all platforms Influncers</p>
+    <p class="text-4xl ii">
+      Like an octopus
+    </p>
+  </div>
+  <div class="flex flex-col justify-center py-10">
+
+    <Clients />
+
+</div>
+
+
+
+
+  <Servcard/>
+
+</div> 
+  
+
+
+
+
+
+
+
+
+<style>
+
+
+  .ii {
+    position: relative;
+    display: inline-block;
+    color: #00db00;
+    background: -webkit-linear-gradient(201.4deg,#00b4ff 5.3%,#00f100 84.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+</style>
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+    </div>
+  </section>
